@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import Profile from './components/Profile';
+import datas from './datas';
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+      <Profile 
+        image={props.image}
+        name='Phyo Ei'
+        roll_no='5CS-20'
+      />
+
+      {/* <Profile 
+        image='./images/pexels1.jpg'
+        name='Phyo Ei'
+        roll_no='5CS-20'
+      />
+
+      <Profile 
+        image='./images/pexels1.jpg'
+        name='Phyo Ei'
+        roll_no='5CS-20'
+      />
+
+      <Profile 
+        image='./images/pexels1.jpg'
+        name='Phyo Ei'
+        roll_no='5CS-20'
+      />
+
+      <Profile 
+        image='./images/pexels1.jpg'
+        name='Phyo Ei'
+        roll_no='5CS-20'
+      /> */}
     </div>
   );
 }
